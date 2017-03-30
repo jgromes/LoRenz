@@ -3,6 +3,11 @@
 
 ---
 
+## Work in progress warning
+This shield is still early in developement. The shield, module or breakout layouts might be changed at any moment! Watch this repo for progress updates.
+
+---
+
 ### This is not the library you are looking for!
 If you're looking for Arduino library to use with these modules, it has its own repository: [https://github.com/jgromes/LoRaLib](https://github.com/jgromes/LoRaLib)
 
