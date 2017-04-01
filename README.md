@@ -25,9 +25,20 @@ The following is a listing of all the files in the `eagle` folder:
   * Arduino UNO and Mega compatibility.
   * On-board prototyping area with separate power rails.
   * Coaxial connector on the breakout board for connecting antenna.
+  * NSS jumper to allow for LoRenz shield stacking.
   
   Please note that to use this shield, you will need to have a breakout board to mount the LoRa module.
   IMPORTANT: There are several incompatible types of these modules being sold, make sure that your module matches your breakout board!
+  
+  Arduino UNO setup:
+  To use LoRenz shield with Arduino UNO, short all the jumpers on U/M pin header. You will also have to short one of the pin pairs on NSS pin header. See the picture for details.
+  
+  The NSS pin header allows you to stack up to four LoRenz shields on one Arduino (why would you though?!) by shorting different pin pair on each shield. Use pin 7 for default LoRaLib settings. See LoRaLib reference for details.
+  
+  Arduino Mega setup:
+  To use LoRenz shield with Arduino Mega, remove all the shorting jumpers from U/M pin header. Arduino Mega has the SPI located on pins 20-22, connect the shield to these pins as per the following image.
+  
+  The shield has a place for LED that will light up when there are data being transferred to/from the LoRa module. To enable this feature, short the EN pads with solder.
 
 * `breakout_green`
 
