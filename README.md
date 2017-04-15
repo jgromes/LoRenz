@@ -44,9 +44,9 @@ The following is a listing of all the files in the `eagle` folder:
 
   This breakout board matches the following LoRa module:
   
-  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_green_top.png" alt="SX1278 Green module top" width="360" height="360"/>
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_green_top.png" alt="SX1278 Green module top" width="355" height="300"/>
   
-  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_green_bottom.png" alt="SX1278 Green module bottom" width="360" height="360"/>
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_green_bottom.png" alt="SX1278 Green module bottom" width="355" height="300"/>
   
   These seem to be fairly common, however, there are several slightly different pinouts. Prior to any soldering, make sure that the module pinout matches the pin description on the breakout board!
 
@@ -54,8 +54,8 @@ The following is a listing of all the files in the `eagle` folder:
 
   This breakout board matches the following LoRa module:
   
-  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_blue_top.png" alt="SX1278 Blue module top" width="360" height="360"/>
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_blue_top.png" alt="SX1278 Blue module top" width="355" height="300"/>
   
-  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_blue_bottom.png" alt="SX1278 Blue module bottom" width="360" height="360"/>
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/SX1278_blue_bottom.png" alt="SX1278 Blue module bottom" width="355" height="300"/>
   
   The amount of these modules on the market seems to be declining lately, but it's still possible to buy them. Again, there are multiple different pinouts.
