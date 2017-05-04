@@ -1,4 +1,7 @@
 # LoRenz
+
+<img src="https://github.com/jgromes/LoRenz/blob/master/doc/LoRenz_shield.png" alt="LoRenz shield" width="40%" height="40%"/>
+
 ## Arduino shield/module to allow easy use of the LoRa communication modules
 
 ---
