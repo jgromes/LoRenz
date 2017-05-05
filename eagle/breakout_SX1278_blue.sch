@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -465,11 +465,9 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <part name="DIO1" library="wirepad" deviceset="SMD1" device=""/>
 <part name="DIO2" library="wirepad" deviceset="SMD1" device=""/>
 <part name="DIO3" library="wirepad" deviceset="SMD1" device=""/>
-<part name="DIO4" library="wirepad" deviceset="SMD1" device=""/>
-<part name="DIO5" library="wirepad" deviceset="SMD1" device=""/>
 <part name="GND_A" library="wirepad" deviceset="SMD1" device=""/>
 <part name="ANT" library="wirepad" deviceset="SMD1" device=""/>
-<part name="3.3V" library="wirepad" deviceset="SMD1" device=""/>
+<part name="VCC" library="wirepad" deviceset="SMD1" device=""/>
 <part name="GND" library="wirepad" deviceset="SMD1" device=""/>
 <part name="SCK" library="wirepad" deviceset="SMD1" device=""/>
 <part name="MISO" library="wirepad" deviceset="SMD1" device=""/>
@@ -478,6 +476,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <part name="X1" library="con-coax" deviceset="734120110" device=""/>
 <part name="JP2A" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP2B" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="GND2" library="wirepad" deviceset="SMD1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -490,11 +489,9 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <instance part="DIO1" gate="1" x="60.96" y="50.8" rot="MR0"/>
 <instance part="DIO2" gate="1" x="60.96" y="45.72" rot="MR0"/>
 <instance part="DIO3" gate="1" x="60.96" y="40.64" rot="MR0"/>
-<instance part="DIO4" gate="1" x="60.96" y="35.56" rot="MR0"/>
-<instance part="DIO5" gate="1" x="60.96" y="30.48" rot="MR0"/>
 <instance part="GND_A" gate="1" x="68.58" y="60.96"/>
 <instance part="ANT" gate="1" x="68.58" y="66.04"/>
-<instance part="3.3V" gate="1" x="68.58" y="55.88"/>
+<instance part="VCC" gate="1" x="68.58" y="55.88"/>
 <instance part="GND" gate="1" x="68.58" y="50.8"/>
 <instance part="SCK" gate="1" x="68.58" y="45.72"/>
 <instance part="MISO" gate="1" x="68.58" y="40.64"/>
@@ -503,6 +500,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <instance part="X1" gate="G$1" x="91.44" y="76.2" rot="MR0"/>
 <instance part="JP2A" gate="A" x="114.3" y="55.88"/>
 <instance part="JP2B" gate="A" x="114.3" y="40.64"/>
+<instance part="GND2" gate="1" x="60.96" y="66.04" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -541,29 +539,11 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <pinref part="DIO3" gate="1" pin="P"/>
 </segment>
 </net>
-<net name="DIO4" class="0">
-<segment>
-<wire x1="58.42" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="35.56" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="6"/>
-<wire x1="45.72" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="DIO4" gate="1" pin="P"/>
-</segment>
-</net>
-<net name="DIO5" class="0">
-<segment>
-<wire x1="58.42" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="30.48" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="7"/>
-<wire x1="43.18" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="DIO5" gate="1" pin="P"/>
-</segment>
-</net>
 <net name="3.3V" class="0">
 <segment>
 <wire x1="71.12" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="55.88" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="3.3V" gate="1" pin="P"/>
+<pinref part="VCC" gate="1" pin="P"/>
 <wire x1="73.66" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP2A" gate="A" pin="1"/>
 </segment>
@@ -620,6 +600,11 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <junction x="76.2" y="55.88"/>
 <junction x="76.2" y="60.96"/>
 <pinref part="JP2A" gate="A" pin="2"/>
+<pinref part="GND2" gate="1" pin="P"/>
+<wire x1="58.42" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="66.04" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="71.12" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ANT" class="0">
