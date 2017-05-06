@@ -29,19 +29,22 @@ The following is a listing of all the files in the `eagle` folder:
   * On-board prototyping area with separate power rails.
   * Coaxial connector on the breakout board for connecting antenna.
   * NSS jumper to allow for LoRenz shield stacking.
+  * The shield has a place for LED that will light up when there are data being transferred to/from the LoRa module. To enable this feature, short the EN pads with solder.
   
   Please note that to use this shield, you will need to have a breakout board to mount the LoRa module.
   IMPORTANT: There are several incompatible types of these modules being sold, make sure that your module matches your breakout board!
   
-  Arduino UNO setup:
-  To use LoRenz shield with Arduino UNO, short all the jumpers on U/M pin header. You will also have to short one of the pin pairs on NSS pin header. See the picture for details.
+  <b>Arduino UNO setup:</b>
   
-  The NSS pin header allows you to stack up to four LoRenz shields on one Arduino (why would you though?!) by shorting different pin pair on each shield. Use pin 7 for default LoRaLib settings. See LoRaLib reference for details.
+  To use LoRenz shield with Arduino UNO, short all the jumpers on U/M pin header (bright red in the picture below). You will also have to short one of the pin pairs on NSS pin header. The NSS pin header allows you to stack up to four LoRenz shields on one Arduino by shorting different pin pair on each shield. If you will only be using one LoRenz shield, I suggest using the pin 7, since that is the default library setting. If you want to stack multiple LoRenz shields, each of them must have a different pin pair shorted. In that case, you will also have to provide the selected pin numbers to LoRaLib. See the library reference for details.
   
-  Arduino Mega setup:
-  To use LoRenz shield with Arduino Mega, remove all the shorting jumpers from U/M pin header. Arduino Mega has the SPI located on pins 20-22, connect the shield to these pins as per the following image.
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/LoRenz_shield_nss.png" alt="LoRenz shield UNO setup" width="40%" height="40%"/>
   
-  The shield has a place for LED that will light up when there are data being transferred to/from the LoRa module. To enable this feature, short the EN pads with solder.
+  <b>Arduino Mega setup:</b>
+  
+  To use LoRenz shield with Arduino Mega, remove all the shorting jumpers from U/M pin header. Arduino Mega has the SPI located on pins 50-53, connect the shield to these pins as per the following image. The NSS selection is the same as with Arduino UNO.
+  
+  <img src="https://github.com/jgromes/LoRenz/blob/master/doc/LoRenz_mega_bb.png" alt="LoRenz shield UNO setup" width="60%" height="60%"/>
 
 * `breakout_green`
 
