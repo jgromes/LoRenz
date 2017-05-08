@@ -7,7 +7,7 @@
 ---
 
 ## Work in progress warning
-This shield is still early in developement. The shield, module or breakout layouts might be changed at any moment! Watch this repo for progress updates. To get notifications about every commit, use the following link to set up an RSS feed reader: https://github.com/jgromes/LoRaLib/commits/master.atom.
+This shield is still early in developement. The shield, module or breakout layouts might be changed at any moment! Watch this repo for progress updates. To get notifications about every commit, use the following link to set up an RSS feed reader: https://github.com/jgromes/LoRenz/commits/master.atom.
 
 ---
 
