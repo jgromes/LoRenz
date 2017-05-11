@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="12" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="12" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -15828,7 +15828,7 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="POWER1" library="con-wago-500" deviceset="W237-102" device=""/>
-<part name="LORA2" library="pinhead" deviceset="PINHD-1X7" device=""/>
+<part name="CON_2" library="pinhead" deviceset="PINHD-1X7" device=""/>
 <part name="ARDUINO-LU" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="ARDUINO-RD" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="ARDUINO-LD" library="pinhead" deviceset="PINHD-1X6" device=""/>
@@ -15881,8 +15881,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="FRAME1" library="frames_edited" deviceset="A4L-LOC" device=""/>
-<part name="LORA1A" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="LORA1B" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON_0" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON_1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17738,14 +17738,14 @@ by Atlas Inc.</text>
 <instances>
 <instance part="POWER1" gate="-1" x="17.78" y="99.06"/>
 <instance part="POWER1" gate="-2" x="17.78" y="104.14"/>
-<instance part="LORA2" gate="A" x="215.9" y="147.32" rot="MR0"/>
+<instance part="CON_2" gate="A" x="215.9" y="147.32" rot="MR0"/>
 <instance part="ARDUINO-LU" gate="A" x="17.78" y="40.64" rot="MR0"/>
 <instance part="ARDUINO-RD" gate="A" x="68.58" y="17.78" rot="MR0"/>
 <instance part="ARDUINO-LD" gate="A" x="17.78" y="15.24" rot="MR0"/>
 <instance part="ARDUINO-RU" gate="A" x="68.58" y="50.8" rot="MR0"/>
 <instance part="GND1" gate="1" x="40.64" y="35.56"/>
 <instance part="GND2" gate="1" x="33.02" y="93.98"/>
-<instance part="GND7" gate="1" x="175.26" y="134.62"/>
+<instance part="GND7" gate="1" x="177.8" y="147.32"/>
 <instance part="JP1" gate="G$1" x="12.7" y="144.78" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="22.86" y="144.78" rot="MR0"/>
 <instance part="JP3" gate="G$1" x="33.02" y="144.78" rot="MR0"/>
@@ -17775,7 +17775,7 @@ by Atlas Inc.</text>
 <instance part="JP8" gate="G$1" x="83.82" y="144.78" rot="MR0"/>
 <instance part="JP9" gate="G$1" x="93.98" y="144.78" rot="MR0"/>
 <instance part="JP10" gate="G$1" x="104.14" y="144.78" rot="MR0"/>
-<instance part="+3V3" gate="G$1" x="177.8" y="152.4"/>
+<instance part="+3V3" gate="G$1" x="177.8" y="162.56"/>
 <instance part="P+4" gate="1" x="40.64" y="45.72"/>
 <instance part="EN" gate="1" x="129.54" y="20.32" rot="R180"/>
 <instance part="U1" gate="A" x="215.9" y="99.06"/>
@@ -17793,19 +17793,13 @@ by Atlas Inc.</text>
 <instance part="R2" gate="G$1" x="190.5" y="99.06"/>
 <instance part="R3" gate="G$1" x="190.5" y="48.26"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="LORA1A" gate="A" x="198.12" y="154.94"/>
-<instance part="LORA1B" gate="A" x="198.12" y="139.7"/>
+<instance part="CON_0" gate="A" x="198.12" y="154.94"/>
+<instance part="CON_1" gate="A" x="198.12" y="139.7"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="195.58" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="139.7" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="LORA1B" gate="A" pin="2"/>
-</segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="ARDUINO-LU" gate="A" pin="7"/>
@@ -17890,6 +17884,12 @@ by Atlas Inc.</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="88.9" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON_0" gate="A" pin="3"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="195.58" y1="152.4" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="152.4" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -18064,58 +18064,53 @@ by Atlas Inc.</text>
 </net>
 <net name="L_NSS" class="0">
 <segment>
-<wire x1="195.58" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
-<label x="187.96" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LORA1A" gate="A" pin="1"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="A3"/>
 <wire x1="233.68" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
 <label x="236.22" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="5"/>
+<wire x1="218.44" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<label x="226.06" y="144.78" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="L_MOSI" class="0">
-<segment>
-<wire x1="195.58" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
-<label x="187.96" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LORA1A" gate="A" pin="2"/>
-</segment>
 <segment>
 <pinref part="U1" gate="A" pin="A2"/>
 <wire x1="233.68" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
 <label x="236.22" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="3"/>
+<wire x1="218.44" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="226.06" y="149.86" size="1.27" layer="95" rot="MR180" xref="yes"/>
+</segment>
 </net>
 <net name="L_MISO" class="0">
-<segment>
-<wire x1="195.58" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
-<label x="187.96" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LORA1A" gate="A" pin="3"/>
-</segment>
 <segment>
 <pinref part="U2" gate="A" pin="A1"/>
 <wire x1="233.68" y1="55.88" x2="236.22" y2="55.88" width="0.1524" layer="91"/>
 <label x="236.22" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="2"/>
+<wire x1="218.44" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="226.06" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="L_SCK" class="0">
-<segment>
-<wire x1="195.58" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
-<label x="187.96" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LORA1B" gate="A" pin="1"/>
-</segment>
 <segment>
 <pinref part="U1" gate="A" pin="A1"/>
 <wire x1="233.68" y1="106.68" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
 <label x="236.22" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="4"/>
+<wire x1="218.44" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
+<label x="226.06" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="L_RESET" class="0">
-<segment>
-<pinref part="LORA2" gate="A" pin="1"/>
-<wire x1="218.44" y1="154.94" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
-<label x="226.06" y="154.94" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U1" gate="A" pin="A4"/>
 <wire x1="233.68" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
@@ -18124,26 +18119,26 @@ by Atlas Inc.</text>
 </net>
 <net name="L_DIO0" class="0">
 <segment>
-<pinref part="LORA2" gate="A" pin="2"/>
-<wire x1="218.44" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
-<label x="226.06" y="152.4" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U2" gate="A" pin="A2"/>
 <wire x1="233.68" y1="53.34" x2="236.22" y2="53.34" width="0.1524" layer="91"/>
 <label x="236.22" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="6"/>
+<wire x1="218.44" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="226.06" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="L_DIO1" class="0">
-<segment>
-<pinref part="LORA2" gate="A" pin="3"/>
-<wire x1="218.44" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
-<label x="226.06" y="149.86" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U2" gate="A" pin="A3"/>
 <wire x1="233.68" y1="50.8" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
 <label x="236.22" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CON_2" gate="A" pin="7"/>
+<wire x1="218.44" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="226.06" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -18160,12 +18155,6 @@ by Atlas Inc.</text>
 <wire x1="129.54" y1="162.56" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="JP13" gate="A" pin="3"/>
 <wire x1="121.92" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="195.58" y1="137.16" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="137.16" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<pinref part="LORA1B" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="+"/>
@@ -18201,6 +18190,12 @@ by Atlas Inc.</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <junction x="180.34" y="99.06"/>
+</segment>
+<segment>
+<pinref part="CON_0" gate="A" pin="2"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="195.58" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="154.94" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">

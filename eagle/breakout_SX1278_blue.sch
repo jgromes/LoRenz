@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -459,7 +459,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 </class>
 </classes>
 <parts>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X7" device=""/>
+<part name="CON_2" library="pinhead" deviceset="PINHD-1X7" device=""/>
 <part name="RESET" library="wirepad" deviceset="SMD1" device=""/>
 <part name="DIO0" library="wirepad" deviceset="SMD1" device=""/>
 <part name="DIO1" library="wirepad" deviceset="SMD1" device=""/>
@@ -474,8 +474,8 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <part name="MOSI" library="wirepad" deviceset="SMD1" device=""/>
 <part name="NSS" library="wirepad" deviceset="SMD1" device=""/>
 <part name="X1" library="con-coax" deviceset="734120110" device=""/>
-<part name="JP2A" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="JP2B" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON_0" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON_1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND2" library="wirepad" deviceset="SMD1" device=""/>
 </parts>
 <sheets>
@@ -483,146 +483,113 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <plain>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="17.78" y="53.34" rot="MR0"/>
-<instance part="RESET" gate="1" x="60.96" y="60.96" rot="MR0"/>
-<instance part="DIO0" gate="1" x="60.96" y="55.88" rot="MR0"/>
-<instance part="DIO1" gate="1" x="60.96" y="50.8" rot="MR0"/>
-<instance part="DIO2" gate="1" x="60.96" y="45.72" rot="MR0"/>
-<instance part="DIO3" gate="1" x="60.96" y="40.64" rot="MR0"/>
-<instance part="GND_A" gate="1" x="68.58" y="60.96"/>
-<instance part="ANT" gate="1" x="68.58" y="66.04"/>
-<instance part="VCC" gate="1" x="68.58" y="55.88"/>
-<instance part="GND" gate="1" x="68.58" y="50.8"/>
-<instance part="SCK" gate="1" x="68.58" y="45.72"/>
-<instance part="MISO" gate="1" x="68.58" y="40.64"/>
-<instance part="MOSI" gate="1" x="68.58" y="35.56"/>
-<instance part="NSS" gate="1" x="68.58" y="30.48"/>
-<instance part="X1" gate="G$1" x="91.44" y="76.2" rot="MR0"/>
-<instance part="JP2A" gate="A" x="114.3" y="55.88"/>
-<instance part="JP2B" gate="A" x="114.3" y="40.64"/>
-<instance part="GND2" gate="1" x="60.96" y="66.04" rot="MR0"/>
+<instance part="CON_2" gate="A" x="17.78" y="55.88" rot="MR0"/>
+<instance part="RESET" gate="1" x="38.1" y="30.48" rot="MR0"/>
+<instance part="DIO0" gate="1" x="50.8" y="45.72" rot="MR0"/>
+<instance part="DIO1" gate="1" x="50.8" y="40.64" rot="MR0"/>
+<instance part="DIO2" gate="1" x="45.72" y="30.48" rot="MR0"/>
+<instance part="DIO3" gate="1" x="53.34" y="30.48" rot="MR0"/>
+<instance part="GND_A" gate="1" x="55.88" y="76.2"/>
+<instance part="ANT" gate="1" x="55.88" y="81.28"/>
+<instance part="VCC" gate="1" x="55.88" y="66.04"/>
+<instance part="GND" gate="1" x="55.88" y="60.96"/>
+<instance part="SCK" gate="1" x="50.8" y="55.88" rot="MR0"/>
+<instance part="MISO" gate="1" x="50.8" y="66.04" rot="MR0"/>
+<instance part="MOSI" gate="1" x="50.8" y="60.96" rot="MR0"/>
+<instance part="NSS" gate="1" x="50.8" y="50.8" rot="MR0"/>
+<instance part="X1" gate="G$1" x="86.36" y="81.28" rot="MR0"/>
+<instance part="CON_0" gate="A" x="88.9" y="66.04"/>
+<instance part="CON_1" gate="A" x="88.9" y="43.18"/>
+<instance part="GND2" gate="1" x="55.88" y="71.12"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="RESET" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="1"/>
-<wire x1="20.32" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="1" pin="P"/>
-</segment>
-</net>
-<net name="DIO0" class="0">
-<segment>
-<wire x1="58.42" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="55.88" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="55.88" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="DIO0" gate="1" pin="P"/>
-</segment>
-</net>
-<net name="DIO1" class="0">
-<segment>
-<wire x1="58.42" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="50.8" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="53.34" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="DIO1" gate="1" pin="P"/>
-</segment>
-</net>
-<net name="DIO3" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="5"/>
-<wire x1="48.26" y1="40.64" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="DIO3" gate="1" pin="P"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<wire x1="71.12" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="55.88" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="VCC" gate="1" pin="P"/>
-<wire x1="73.66" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP2A" gate="A" pin="1"/>
-</segment>
-</net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="71.12" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="CON_2" gate="A" pin="4"/>
 <pinref part="SCK" gate="1" pin="P"/>
-<wire x1="78.74" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP2A" gate="A" pin="3"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<wire x1="71.12" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="40.64" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="MISO" gate="1" pin="P"/>
-<wire x1="81.28" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="JP2B" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<wire x1="71.12" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="35.56" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="MOSI" gate="1" pin="P"/>
-<wire x1="83.82" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP2B" gate="A" pin="2"/>
+<wire x1="20.32" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NSS" class="0">
 <segment>
-<wire x1="71.12" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="CON_2" gate="A" pin="5"/>
+<wire x1="20.32" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="53.34" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="NSS" gate="1" pin="P"/>
-<wire x1="111.76" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="JP2B" gate="A" pin="3"/>
+<wire x1="43.18" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="CON_2" gate="A" pin="3"/>
+<wire x1="20.32" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="MOSI" gate="1" pin="P"/>
+<wire x1="43.18" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="CON_2" gate="A" pin="2"/>
+<wire x1="20.32" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="60.96" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="MISO" gate="1" pin="P"/>
+<wire x1="40.64" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DIO0" class="0">
+<segment>
+<pinref part="CON_2" gate="A" pin="6"/>
+<wire x1="20.32" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="50.8" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="DIO0" gate="1" pin="P"/>
+<wire x1="40.64" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DIO1" class="0">
+<segment>
+<pinref part="CON_2" gate="A" pin="7"/>
+<wire x1="20.32" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="48.26" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="DIO1" gate="1" pin="P"/>
+<wire x1="38.1" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="VCC" gate="1" pin="P"/>
+<pinref part="CON_0" gate="A" pin="2"/>
+<wire x1="58.42" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="71.12" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="50.8" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="GND" gate="1" pin="P"/>
-<wire x1="76.2" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND_A" gate="1" pin="P"/>
-<wire x1="71.12" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="60.96" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
-<junction x="76.2" y="55.88"/>
-<junction x="76.2" y="60.96"/>
-<pinref part="JP2A" gate="A" pin="2"/>
+<wire x1="73.66" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="P"/>
-<wire x1="58.42" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="71.12" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<junction x="73.66" y="76.2"/>
+<pinref part="GND" gate="1" pin="P"/>
+<wire x1="58.42" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="60.96" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="CON_0" gate="A" pin="3"/>
+<wire x1="73.66" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<junction x="73.66" y="71.12"/>
+<junction x="73.66" y="63.5"/>
 </segment>
 </net>
 <net name="ANT" class="0">
 <segment>
-<pinref part="ANT" gate="1" pin="P"/>
-<wire x1="71.12" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="66.04" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DIO2" class="0">
-<segment>
-<wire x1="58.42" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="45.72" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="50.8" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="DIO2" gate="1" pin="P"/>
+<pinref part="ANT" gate="1" pin="P"/>
+<wire x1="83.82" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
