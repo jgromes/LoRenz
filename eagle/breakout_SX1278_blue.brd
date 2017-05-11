@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,14 +57,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="26.3525" x2="0" y2="2.235" width="0.254" layer="20"/>
-<wire x1="0" y1="2.235" x2="2.235" y2="0" width="0.254" layer="20"/>
-<wire x1="2.235" y1="0" x2="26.3525" y2="0" width="0.254" layer="20"/>
-<wire x1="26.3525" y1="0" x2="28.565" y2="2.235" width="0.254" layer="20"/>
-<wire x1="28.565" y1="2.235" x2="28.565" y2="26.3525" width="0.254" layer="20"/>
-<wire x1="28.565" y1="26.3525" x2="26.3425" y2="28.575" width="0.254" layer="20"/>
-<wire x1="26.3425" y1="28.575" x2="2.2225" y2="28.575" width="0.254" layer="20"/>
-<wire x1="2.2225" y1="28.575" x2="0" y2="26.3525" width="0.254" layer="20"/>
+<wire x1="0" y1="26.289" x2="0" y2="2.286" width="0.254" layer="20"/>
+<wire x1="0" y1="2.286" x2="2.286" y2="0" width="0.254" layer="20"/>
+<wire x1="2.286" y1="0" x2="26.289" y2="0" width="0.254" layer="20"/>
+<wire x1="26.289" y1="0" x2="28.575" y2="2.286" width="0.254" layer="20"/>
+<wire x1="28.575" y1="2.286" x2="28.575" y2="26.289" width="0.254" layer="20"/>
+<wire x1="28.575" y1="26.289" x2="26.289" y2="28.575" width="0.254" layer="20"/>
+<wire x1="26.289" y1="28.575" x2="2.286" y2="28.575" width="0.254" layer="20"/>
+<wire x1="2.286" y1="28.575" x2="0" y2="26.289" width="0.254" layer="20"/>
 <wire x1="5.207" y1="22.86" x2="21.209" y2="22.86" width="0.254" layer="21"/>
 <wire x1="21.209" y1="22.86" x2="21.209" y2="6.985" width="0.254" layer="21"/>
 <wire x1="21.209" y1="6.985" x2="5.207" y2="6.985" width="0.254" layer="21"/>
@@ -244,7 +244,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -321,7 +321,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,14 +57,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="26.3525" x2="0" y2="2.235" width="0.254" layer="20"/>
-<wire x1="0" y1="2.235" x2="2.235" y2="0" width="0.254" layer="20"/>
-<wire x1="2.235" y1="0" x2="26.3525" y2="0" width="0.254" layer="20"/>
-<wire x1="26.3525" y1="0" x2="28.565" y2="2.235" width="0.254" layer="20"/>
-<wire x1="28.565" y1="2.235" x2="28.565" y2="26.3525" width="0.254" layer="20"/>
-<wire x1="28.565" y1="26.3525" x2="26.3425" y2="28.575" width="0.254" layer="20"/>
-<wire x1="26.3425" y1="28.575" x2="2.2225" y2="28.575" width="0.254" layer="20"/>
-<wire x1="2.2225" y1="28.575" x2="0" y2="26.3525" width="0.254" layer="20"/>
+<wire x1="0" y1="26.289" x2="0" y2="2.286" width="0.254" layer="20"/>
+<wire x1="0" y1="2.286" x2="2.286" y2="0" width="0.254" layer="20"/>
+<wire x1="2.286" y1="0" x2="26.289" y2="0" width="0.254" layer="20"/>
+<wire x1="26.289" y1="0" x2="28.575" y2="2.286" width="0.254" layer="20"/>
+<wire x1="28.575" y1="2.286" x2="28.575" y2="26.289" width="0.254" layer="20"/>
+<wire x1="28.575" y1="26.289" x2="26.289" y2="28.575" width="0.254" layer="20"/>
+<wire x1="26.289" y1="28.575" x2="2.286" y2="28.575" width="0.254" layer="20"/>
+<wire x1="2.286" y1="28.575" x2="0" y2="26.289" width="0.254" layer="20"/>
 <text x="24.257" y="8.89" size="0.6096" layer="25">GND</text>
 <wire x1="6.35" y1="22.225" x2="22.352" y2="22.225" width="0.254" layer="21"/>
 <wire x1="22.352" y1="22.225" x2="22.352" y2="6.223" width="0.254" layer="21"/>
