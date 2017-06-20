@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -469,7 +469,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <part name="DIO5" library="wirepad" deviceset="SMD2" device=""/>
 <part name="GND_RF" library="wirepad" deviceset="SMD2" device=""/>
 <part name="RF" library="wirepad" deviceset="SMD2" device=""/>
-<part name="VCC" library="wirepad" deviceset="SMD2" device=""/>
+<part name="3.3V" library="wirepad" deviceset="SMD2" device=""/>
 <part name="GND" library="wirepad" deviceset="SMD2" device=""/>
 <part name="SCK" library="wirepad" deviceset="SMD2" device=""/>
 <part name="SO" library="wirepad" deviceset="SMD2" device=""/>
@@ -495,7 +495,7 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <instance part="DIO5" gate="1" x="66.04" y="27.94" rot="MR0"/>
 <instance part="GND_RF" gate="1" x="55.88" y="73.66"/>
 <instance part="RF" gate="1" x="55.88" y="78.74"/>
-<instance part="VCC" gate="1" x="55.88" y="63.5"/>
+<instance part="3.3V" gate="1" x="55.88" y="63.5"/>
 <instance part="GND" gate="1" x="55.88" y="58.42"/>
 <instance part="SCK" gate="1" x="50.8" y="53.34" rot="MR0"/>
 <instance part="SO" gate="1" x="50.8" y="63.5" rot="MR0"/>
@@ -568,10 +568,10 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/734120110_sd.pdf"&gt; Data 
 <wire x1="83.82" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="3.3V" class="0">
 <segment>
 <pinref part="CON_1" gate="A" pin="2"/>
-<pinref part="VCC" gate="1" pin="P"/>
+<pinref part="3.3V" gate="1" pin="P"/>
 <wire x1="86.36" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
